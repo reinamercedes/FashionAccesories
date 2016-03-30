@@ -1,0 +1,117 @@
+ $f-gris: #777777;
+ $gris-claro: #F7F7F7;
+ $gris: #eeeeee;
+ $gris-sep: #CCCCCC;
+ $negro: #4E4647;
+
+ * {
+ 	font-family: Montserrat;
+ }
+ header {
+ 	background-color: $gris;
+ 	.row {
+ 		margin-bottom: -15px;
+ 	}
+ 	.navbar {
+ 		a {
+ 			color: $f-gris;
+ 			text-decoration: none;
+ 			font-size: 1em;
+ 		}
+ 	}
+ }
+#head {
+    .col-md-4 {
+    	padding: 5% 0;        
+        &:nth-child(1){
+        	text-align: left;
+        	font-size: 1.4em;
+        	line-height: 15px;
+        	color: $f-gris;
+        	.open-time {
+        		margin: 2%;
+        		margin-left: 6%;
+        	}
+        	i {
+        		position: relative;
+                top: 30px;
+        	}
+        }
+        &:nth-child(2) {
+            text-align: left;        	
+        }
+        &:nth-child(3) {
+        	text-align: center;
+        	input {
+        		margin: 6%;
+        		padding: 2% 45% 2% 3%;
+        		color: $f-gris;
+        		border: 1px solid $gris-claro;
+        	}
+        	i {
+        		position: absolute;
+                top: 47%;
+                right: 5%;
+                color: $f-gris;
+        	}
+        }
+    }
+}
+#mini-nav {
+	background-color: $gris;
+	a {
+		padding: 25px 5px;
+		color: black;
+		text-decoration: none;
+		font-size: 1em;
+		&:hover {
+			background-color: #E48080;
+			color: white;
+		}
+	}
+	.navbar-right {
+		a {
+			padding: 15px 5px;
+			text-align: center;
+			background-color: $negro;
+			color: white;
+			&:hover {
+			    background-color: #E48080;
+			    color: white;
+		    }
+		}
+	}
+	.row {
+		margin-bottom: -21px;
+	}
+}
+#banner {
+	.col-md-5,
+	.col-md-7 {
+		padding: 5% 0;
+	}
+}
+#line {
+	.col-md-4,
+	.col-md-5
+	.col-md-2 {
+		padding: 0;
+		text-align: center;
+		.line-separator {
+			width: 100%;
+			padding: 3px;
+			border-top: 2px solid $gris-claro;
+			border-bottom: 2px solid $gris-claro;
+		}
+		i,
+		span {
+			margin: 0 3%;
+			text-align: center;
+            font-size: 1.3em;
+            &:nth-child(3),
+            &:nth-child(4) {
+            	color: $gris-sep;
+            }
+		}
+	}
+}

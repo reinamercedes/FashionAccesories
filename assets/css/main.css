@@ -1,0 +1,100 @@
+* {
+  font-family: Montserrat; }
+
+header {
+  background-color: #eeeeee; }
+  header .row {
+    margin-bottom: -15px; }
+  header .navbar a {
+    color: #777777;
+    text-decoration: none;
+    font-size: 1em; }
+
+#head .col-md-4 {
+  padding: 5% 0; }
+  #head .col-md-4:nth-child(1) {
+    text-align: left;
+    font-size: 1.4em;
+    line-height: 15px;
+    color: #777777; }
+    #head .col-md-4:nth-child(1) .open-time {
+      margin: 2%;
+      margin-left: 6%; }
+    #head .col-md-4:nth-child(1) i {
+      position: relative;
+      top: 30px; }
+  #head .col-md-4:nth-child(2) {
+    text-align: left; }
+  #head .col-md-4:nth-child(3) {
+    text-align: center; }
+    #head .col-md-4:nth-child(3) input {
+      margin: 6%;
+      padding: 2% 45% 2% 3%;
+      color: #777777;
+      border: 1px solid #F7F7F7; }
+    #head .col-md-4:nth-child(3) i {
+      position: absolute;
+      top: 47%;
+      right: 5%;
+      color: #777777; }
+
+#mini-nav {
+  background-color: #eeeeee; }
+  #mini-nav a {
+    padding: 25px 5px;
+    color: black;
+    text-decoration: none;
+    font-size: 1em; }
+    #mini-nav a:hover {
+      background-color: #E48080;
+      color: white; }
+  #mini-nav .navbar-right a {
+    padding: 15px 5px;
+    text-align: center;
+    background-color: #4E4647;
+    color: white; }
+    #mini-nav .navbar-right a:hover {
+      background-color: #E48080;
+      color: white; }
+  #mini-nav .row {
+    margin-bottom: -21px; }
+
+#banner .col-md-5,
+#banner .col-md-7 {
+  padding: 5% 0; }
+
+#line .col-md-4,
+#line .col-md-5
+.col-md-2 {
+  padding: 0;
+  text-align: center; }
+  #line .col-md-4 .line-separator,
+  #line .col-md-5
+  .col-md-2 .line-separator {
+    width: 100%;
+    padding: 3px;
+    border-top: 2px solid #F7F7F7;
+    border-bottom: 2px solid #F7F7F7; }
+  #line .col-md-4 i,
+  #line .col-md-4 span,
+  #line .col-md-5
+  .col-md-2 i,
+  #line .col-md-5
+  .col-md-2 span {
+    margin: 0 3%;
+    text-align: center;
+    font-size: 1.3em; }
+    #line .col-md-4 i:nth-child(3), #line .col-md-4 i:nth-child(4),
+    #line .col-md-4 span:nth-child(3),
+    #line .col-md-4 span:nth-child(4),
+    #line .col-md-5
+    .col-md-2 i:nth-child(3),
+    #line .col-md-5
+    .col-md-2 i:nth-child(4),
+    #line .col-md-5
+    .col-md-2 span:nth-child(3),
+    #line .col-md-5
+    .col-md-2 span:nth-child(4) {
+      color: #CCCCCC; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,350 @@
+doctype 
+html
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="assets/css/main.css")
+        link(rel="stylesheet", href="assets/css/bootstrap.min.css") 
+        link(rel="stylesheet", href="assets/css/font-awesome.min.css")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href='https://fonts.googleapis.com/css?family=Montserrat', type='text/css')
+    body 
+        mixin item-compra(scr)
+            div.item-descp
+                img(src=scr)
+                br
+                | Deliver Wide
+                br
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star-o
+                i.fa.fa-star-o
+                br
+                span $218.00
+        mixin blog-item(scr)
+            div.col-md-3
+                div.img-blog
+                    img.img-responsive(src=scr)
+                    p 27/11/2015
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, earum, dolores...
+                    h5 Read more ...
+        header 
+            div.container
+                div.row
+                    nav.navbar
+                        div.navbar-header
+                            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+                                span.sr-only Toggle navigation
+                                span.icon-bar
+                                span.icon-bar 
+                                span.icon-bar
+                            a.navbar-brand(href='#') Default Welcome Msg!
+                        div#bs-example-navbar-collapse-1.collapse.navbar-collapse
+                            ul.nav.navbar-nav.navbar-right
+                                li.dropdown
+                                    a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                                        i.fa.fa-flag
+                                        | Language 
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='#') Action
+                                        li
+                                            a(href='#') Another action
+                                        li
+                                            a(href='#') Something else here
+                                        li.divider(role='separator')
+                                        li
+                                            a(href='#') Separated link
+                                li.dropdown
+                                    a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                                        i.fa.fa-usd
+                                        | Currency 
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='#') Action
+                                        li
+                                            a(href='#') Another action
+                                        li
+                                            a(href='#') Something else here
+                                        li.divider(role='separator')
+                                        li
+                                            a(href='#') Separated link
+                                li.dropdown
+                                    a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                                        i.fa.fa-user
+                                        | My Account 
+                                        span.caret
+                                    ul.dropdown-menu
+                                        li
+                                            a(href='#') Action
+                                        li
+                                            a(href='#') Another action
+                                        li
+                                            a(href='#') Something else here
+                                        li.divider(role='separator')
+                                        li
+                                            a(href='#') Separated link
+        section#head
+            div.container
+                div.row
+                    div.col-md-4
+                        i.fa.fa-clock-o
+                        div.open-time
+                            | OPENING TIME
+                            br
+                            span(style="font-size:0.6em;") 9.00 AM - 10.00 PM
+                    div.col-md-4 
+                        img(src="assets/images/logo.png")
+                    div.col-md-4
+                        input(type="text" placeholder="search")
+                        i.fa.fa-search
+        section#mini-nav
+            div.container
+                div.row
+                    nav.navbar
+                        div.navbar-header
+                            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+                                span.sr-only Toggle navigation
+                                span.icon-bar
+                                span.icon-bar 
+                                span.icon-bar
+                        div#bs-example-navbar-collapse-1.collapse.navbar-collapse
+                            ul.nav.navbar-nav
+                                li
+                                    a(href='index.html') HOME
+                                li
+                                    a(href='contact.html') CONTACT US
+                            ul.nav.navbar-nav.navbar-right
+                                li 
+                                    a(href="#") 
+                                        i.fa.fa-shopping-cart
+                                        | My Cart
+                                        br
+                                        | 2 item(s) - $244.00
+        section#center-img
+            div#myCarousel.carousel.slide(data-ride='carousel')
+                // Indicators
+                ol.carousel-indicators
+                    li.active(data-target='#myCarousel', data-slide-to='0')
+                    li(data-target='#myCarousel', data-slide-to='1')
+                // Wrapper for slides
+                div.carousel-inner(role='listbox')
+                    div.item.active
+                        img(src='assets/images/slider1.jpg')
+                    div.item
+                        img(src='assets/images/slider2.jpg')
+                // Left and right controls
+                a.left.carousel-control(href='#myCarousel', role='button', data-slide='prev')
+                    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                    span.sr-only Previous
+                a.right.carousel-control(href='#myCarousel', role='button', data-slide='next')
+                    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                    span.sr-only Next
+        section#banner
+            div.container
+                div.row
+                    div.col-md-5
+                        img.img-responsive(src="assets/images/banner1.jpg")
+                    div.col-md-7
+                        img.img-responsive(src="assets/images/banner2.jpg")
+        section#line
+            div.container
+                div.row
+                    div.col-md-4
+                        div.line-separator
+                    div.col-md-4
+                        i.fa.fa-chevron-left
+                        span LATEST
+                        span BESTSELLER
+                        span SALE
+                        i.fa.fa-chevron-right
+                    div.col-md-4
+                        div.line-separator
+        section#items
+            div.container
+                div.row
+                    div.col-md-3
+                        +item-compra('assets/images/a1.jpg')
+                    div.col-md-3
+                        +item-compra('assets/images/b1.jpg')
+                    div.col-md-3
+                        +item-compra('assets/images/c1.jpg')
+                    div.col-md-3
+                        +item-compra('assets/images/d1.jpg')
+        section#companies
+            div.container
+                div.row
+                    div.col-md-2
+                        img(src="assets/images/client1.jpg")
+                    div.col-md-2
+                        img(src="assets/images/client2.jpg")
+                    div.col-md-2
+                        img(src="assets/images/client3.jpg")
+                    div.col-md-2
+                        img(src="assets/images/client4.jpg")
+                    div.col-md-2
+                        img(src="assets/images/client5.jpg")
+                    div.col-md-2
+                        img(src="assets/images/client6.jpg")
+        section#line 
+            div.container
+                div.row
+                    div.col-md-4
+                        div.line-separator
+                    div.col-md-4
+                        i.fa.fa-chevron-left
+                        span CLOTHING
+                        span EQUIPMENTS
+                        span JEWELLERY
+                        i.fa.fa-chevron-right
+                    div.col-md-4
+                        div.line-separator
+        section#more-items
+            div.container
+                div.row
+                    div.col-md-4
+                        div.more-item-descp
+                            div.col-md-6
+                                div.image-item
+                                    img.img-responsive(src="assets/images/a2.jpg")
+                            div.col-md-6
+                                | Deliver Wide
+                                br
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                br
+                                span $218.00
+                    div.col-md-4
+                        div.more-item-descp
+                            div.col-md-6
+                                div.image-item
+                                    img.img-responsive(src="assets/images/a2.jpg")
+                            div.col-md-6
+                                | Deliver Wide
+                                br
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                br
+                                span $218.00
+                    div.col-md-4
+                        div.more-item-descp
+                            div.col-md-6
+                                div.image-item
+                                    img.img-responsive(src="assets/images/a2.jpg")
+                            div.col-md-6
+                                | Deliver Wide
+                                br
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                br
+                                span $218.00
+                div.row
+                    div.col-md-4
+                        div.more-item-descp
+                            div.col-md-6
+                                div.image-item
+                                    img.img-responsive(src="assets/images/a2.jpg")
+                            div.col-md-6
+                                | Deliver Wide
+                                br
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                br
+                                span $218.00
+                    div.col-md-4
+                        div.more-item-descp
+                            div.col-md-6
+                                div.image-item
+                                    img.img-responsive(src="assets/images/a2.jpg")
+                            div.col-md-6
+                                | Deliver Wide
+                                br
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                br
+                                span $218.00
+                    div.col-md-4
+                        div.more-item-descp
+                            div.col-md-6
+                                div.image-item
+                                    img.img-responsive(src="assets/images/a2.jpg")
+                            div.col-md-6
+                                | Deliver Wide
+                                br
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star
+                                i.fa.fa-star-o
+                                i.fa.fa-star-o
+                                br
+                                span $218.00
+        section#line 
+            div.container
+                div.row
+                    div.col-md-5
+                        div.line-separator
+                    div.col-md-2
+                        i.fa.fa-chevron-left
+                        span BLOG
+                        i.fa.fa-chevron-right
+                    div.col-md-5
+                        div.line-separator
+        section#blog
+            div.container
+                div.row
+                    +blog-item('assets/images/blog2.jpg')
+                    +blog-item('assets/images/blog1.jpg')
+                    +blog-item('assets/images/blog2.jpg')
+                    +blog-item('assets/images/blog3.jpg')
+        section#order
+            div.container
+                div.row
+                    div.col-md-4
+                        div.button-order
+                            i.fa.fa-phone
+                            | ORDER ONLINE NOW
+                            br
+                            |Call Us: (0123) 456 789
+                    div.col-md-4
+                        div.button-order
+                            i.fa.fa-plane
+                            | FREE WORLDWIDE SHIPPING
+                            br
+                            |In Order Over $100
+                    div.col-md-4
+                        div.button-order
+                            i.fa.fa-money
+                            | 30 DAYS MONEY BACK
+                            br
+                            |Satisfaction Guarantee
+                                
+                                   
+
+
+                            
+
+
+
+
+
+
+
+        script(src="assets/js/bootstrap.js")
+
